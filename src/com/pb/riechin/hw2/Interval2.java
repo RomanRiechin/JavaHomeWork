@@ -2,8 +2,9 @@ package com.pb.riechin.hw2;
 
 import java.util.Scanner;
 
-public class Interval {
+public class Interval2 {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         int x;
         System.out.println("Введите число от 1 до 100");
@@ -20,5 +21,5 @@ public class Interval {
             }
         }
     }
-}
 
+ }
