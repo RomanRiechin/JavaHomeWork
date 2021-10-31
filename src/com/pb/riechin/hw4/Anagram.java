@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+import static jdk.nashorn.internal.objects.NativeString.toLowerCase;
+
 public class Anagram {
 
     public static void main(String[] args) {
@@ -17,6 +19,12 @@ public class Anagram {
         System.out.println("Наберите вторую фразу");
         String fr2 = scanner.nextLine();
 
+        fr1 = fr1.replaceAll("[^\\da-zA-Zа-яёА-ЯЁ]", "");
+        fr2 = fr2.replaceAll("[^\\da-zA-Zа-яёА-ЯЁ]", "");
+
+        fr1=toLowerCase(fr1);
+        fr2=toLowerCase(fr2);
+
         char[] nfr1 = fr1.toCharArray();
         char[] nfr2 = fr2.toCharArray();
 
@@ -25,6 +33,9 @@ public class Anagram {
 
         fr1 = new String(nfr1);
         fr2 = new String(nfr2);
+
+        System.out.println(fr1);
+        System.out.println(fr2);
 
         if (fr1.equals(fr2)){
             System.out.println("Анаграмма");
