@@ -8,7 +8,7 @@ public class Cat extends Animal {
     public String getEarsPurity() {
         return this.earsPurity;
     }
-    public void setEarsPurity(String earsPurityarsPurity) {
+    public void setEarsPurity(String earsPurity) {
         this.earsPurity = earsPurity;
     }
     @Override
