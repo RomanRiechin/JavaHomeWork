@@ -20,7 +20,7 @@ public class Auth {
     public void signIn(String login, String passwd) throws WrongLoginException, WrongPasswordException {
         if (!((this.login).equalsIgnoreCase(login))) throw new WrongLoginException("Такой логин не существует");
         if (!(this.password).equals(passwd)) throw new WrongPasswordException("Ошибочный пароль");
-        System.out.println("Добро пожаловать!");
+        System.out.println("you're welcome");
     }
 
     public String getLogin() {
